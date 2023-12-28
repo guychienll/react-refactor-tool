@@ -177,7 +177,7 @@ export function activate(context: vscode.ExtensionContext) {
                     return;
                 }
                 const appendText = await prettier.format(
-                    `function ${symbol} (){ return(<></>) }`,
+                    `function ${symbol} (){ return null }`,
                     PRETTIER_OPTIONS
                 );
 
